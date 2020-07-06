@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { StyleProvider } from './context/gridContext'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StyleProvider>
+      <App />
+    </StyleProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
